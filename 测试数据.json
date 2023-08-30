@@ -1,0 +1,38 @@
+{
+	"info": {
+		"_postman_id": "ae40d733-37fb-469d-9208-a65f71cae7c4",
+		"name": "zhi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "新增或修改",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"shanghai\",\r\n    \"date\":\"2023-08-28\",\r\n    \"time\":\"2023-08-28 17:43:10\",\r\n    \"sum\":999,\r\n    \"item\":[\r\n        {\r\n            \"name\":\"shanghai1\",\r\n            \"time\":\"2023-08-28 17:43:10\",\r\n            \"sum\":\"1000\"\r\n        },\r\n        {\r\n            \"name\":\"shanghai2\",\r\n            \"time\":\"2023-08-28 17:43:10\",\r\n            \"sum\":\"2000\"\r\n        },\r\n        {\r\n            \"name\":\"shanghai3\",\r\n            \"time\":\"2023-08-28 17:43:10\",\r\n            \"sum\":\"3000\"\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/invoice/execute",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"invoice",
+						"execute"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

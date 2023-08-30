@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.invoice.mapper.InvoiceMapper">
+
+    <resultMap id="BaseResultMap" type="com.invoice.domain.Invoice">
+            <id property="id" column="id" jdbcType="INTEGER"/>
+            <result property="name" column="name" jdbcType="VARCHAR"/>
+            <result property="date" column="date" jdbcType="DATE"/>
+            <result property="time" column="time" jdbcType="TIMESTAMP"/>
+            <result property="sum" column="sum" jdbcType="FLOAT"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,name,date,
+        time,sum
+    </sql>
+</mapper>
